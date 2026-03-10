@@ -3,24 +3,28 @@
 <head>
 <title>Valtrix Group</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 
 body{
 margin:0;
-font-family:Arial;
+font-family:Arial, sans-serif;
 background:#0b0b0b;
 color:white;
 }
 
+/* NAVBAR */
+
 header{
 display:flex;
 justify-content:space-between;
-padding:20px 60px;
 align-items:center;
+padding:20px 60px;
 }
 
 .logo{
-font-size:24px;
+font-size:26px;
 font-weight:bold;
 }
 
@@ -32,38 +36,46 @@ nav a{
 margin-left:25px;
 text-decoration:none;
 color:white;
+font-size:14px;
 }
+
+/* HERO */
 
 .hero{
 display:flex;
-align-items:center;
 justify-content:space-between;
+align-items:center;
 padding:80px 60px;
+flex-wrap:wrap;
 }
 
 .hero-text{
-max-width:600px;
+max-width:550px;
 }
 
 .hero h1{
-font-size:60px;
-line-height:1.2;
+font-size:58px;
+line-height:1.1;
 }
 
 .hero p{
-opacity:0.7;
+opacity:0.8;
 margin-top:20px;
 }
 
 .btn{
+display:inline-block;
 background:#d4ff00;
 color:black;
-padding:14px 30px;
+padding:14px 28px;
 border-radius:30px;
 text-decoration:none;
 font-weight:bold;
-margin-right:15px;
+margin-top:20px;
+margin-right:10px;
 }
+
+/* CREATOR GRID */
 
 .images{
 display:grid;
@@ -73,33 +85,61 @@ gap:20px;
 
 .images img{
 width:200px;
-border-radius:15px;
+border-radius:14px;
 }
+
+/* SECTION */
 
 .section{
 padding:80px 60px;
 text-align:center;
 }
 
-.cards{
+.services{
 display:flex;
 justify-content:center;
+flex-wrap:wrap;
 gap:30px;
 margin-top:40px;
 }
 
 .card{
-background:#111;
+background:#121212;
 padding:30px;
 border-radius:10px;
 width:250px;
 }
 
+/* FORM */
+
+form{
+max-width:500px;
+margin:auto;
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+margin-top:10px;
+border:none;
+border-radius:6px;
+}
+
+button{
+margin-top:15px;
+padding:12px 25px;
+background:#d4ff00;
+border:none;
+border-radius:20px;
+font-weight:bold;
+}
+
+/* FOOTER */
+
 footer{
+background:#000;
 padding:40px;
 text-align:center;
-background:#000;
-margin-top:40px;
 }
 
 </style>
@@ -115,9 +155,9 @@ Valtrix<span class="highlight">Group</span>
 </div>
 
 <nav>
-<a href="#">For Brands</a>
-<a href="#">For Creators</a>
-<a href="#">Works</a>
+<a href="#">Home</a>
+<a href="#">Creators</a>
+<a href="#">Brands</a>
 <a href="#">Contact</a>
 </nav>
 
@@ -128,18 +168,16 @@ Valtrix<span class="highlight">Group</span>
 <div class="hero-text">
 
 <h1>
-Where Creators <span class="highlight">Grow Fast</span> And
-Brands <span class="highlight">Scale Smart</span>
+Where Creators <span class="highlight">Grow Fast</span><br>
+And Brands <span class="highlight">Scale Smart</span>
 </h1>
 
 <p>
-Valtrix connects restaurants, SaaS companies and fitness brands
-with creators to drive real growth.
+Valtrix Group connects brands with creators to run powerful
+influencer marketing campaigns and brand collaborations.
 </p>
 
-<br>
-
-<a class="btn" href="mailto:nk.brandpartnerships@gmail.com">For Brands</a>
+<a class="btn" href="#brandform">For Brands</a>
 <a class="btn" href="#">For Creators</a>
 
 </div>
@@ -159,24 +197,65 @@ with creators to drive real growth.
 
 <h2>Our Services</h2>
 
-<div class="cards">
+<div class="services">
 
 <div class="card">
-<h3>Restaurant Promotions</h3>
-<p>Influencer collaborations for restaurants in Lucknow.</p>
-</div>
-
-<div class="card">
-<h3>SaaS Brand Deals</h3>
-<p>Creator integrations and tech promotions.</p>
+<h3>Influencer Marketing</h3>
+<p>Run powerful campaigns with creators who match your audience.</p>
 </div>
 
 <div class="card">
-<h3>Fitness Partnerships</h3>
-<p>Promotions for supplements and fitness brands.</p>
+<h3>Brand Collaborations</h3>
+<p>Partner with creators to promote products and services.</p>
+</div>
+
+<div class="card">
+<h3>Campaign Strategy</h3>
+<p>Plan and execute performance-focused marketing campaigns.</p>
 </div>
 
 </div>
+
+</section>
+
+<section class="section">
+
+<h2>Creator Network</h2>
+
+<p>We work with a growing network of creators across multiple niches.</p>
+
+<div class="images">
+
+<img src="https://picsum.photos/200?5">
+<img src="https://picsum.photos/200?6">
+<img src="https://picsum.photos/200?7">
+<img src="https://picsum.photos/200?8">
+
+</div>
+
+</section>
+
+<section class="section" id="brandform">
+
+<h2>Start a Campaign</h2>
+
+<p>Tell us about your campaign and our team will reach out.</p>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Work Email">
+
+<input type="text" placeholder="Brand / Company">
+
+<input type="text" placeholder="Campaign Budget">
+
+<textarea placeholder="Tell us about your campaign"></textarea>
+
+<button>Submit Campaign</button>
+
+</form>
 
 </section>
 
