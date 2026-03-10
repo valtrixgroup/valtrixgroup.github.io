@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Valtrix Group</title>
 
+<title>Valtrix Group</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
 body{
 margin:0;
-font-family:Arial, sans-serif;
-background:#0b0b0b;
+font-family:Arial;
+background:#0c0c0c;
 color:white;
 }
 
-/* NAVBAR */
+/* NAV */
 
 header{
 display:flex;
@@ -34,8 +34,8 @@ color:#d4ff00;
 
 nav a{
 margin-left:25px;
-text-decoration:none;
 color:white;
+text-decoration:none;
 font-size:14px;
 }
 
@@ -45,16 +45,12 @@ font-size:14px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:80px 60px;
+padding:90px 60px;
 flex-wrap:wrap;
 }
 
-.hero-text{
-max-width:550px;
-}
-
 .hero h1{
-font-size:58px;
+font-size:60px;
 line-height:1.1;
 }
 
@@ -64,50 +60,68 @@ margin-top:20px;
 }
 
 .btn{
-display:inline-block;
 background:#d4ff00;
 color:black;
 padding:14px 28px;
 border-radius:30px;
 text-decoration:none;
 font-weight:bold;
+display:inline-block;
 margin-top:20px;
 margin-right:10px;
 }
 
-/* CREATOR GRID */
+/* STATS */
 
-.images{
-display:grid;
-grid-template-columns:repeat(2,200px);
-gap:20px;
-}
-
-.images img{
-width:200px;
-border-radius:14px;
-}
-
-/* SECTION */
-
-.section{
-padding:80px 60px;
+.stats{
+display:flex;
+justify-content:center;
+gap:80px;
+padding:60px;
+background:#111;
 text-align:center;
 }
 
-.services{
+.stats h2{
+font-size:36px;
+margin:0;
+}
+
+/* SERVICES */
+
+.section{
+padding:90px 60px;
+text-align:center;
+}
+
+.cards{
 display:flex;
 justify-content:center;
-flex-wrap:wrap;
 gap:30px;
+flex-wrap:wrap;
 margin-top:40px;
 }
 
 .card{
-background:#121212;
+background:#151515;
 padding:30px;
 border-radius:10px;
-width:250px;
+width:260px;
+}
+
+/* CREATOR GRID */
+
+.creators{
+display:grid;
+grid-template-columns:repeat(auto-fit,200px);
+gap:20px;
+justify-content:center;
+margin-top:40px;
+}
+
+.creators img{
+width:200px;
+border-radius:14px;
 }
 
 /* FORM */
@@ -115,31 +129,40 @@ width:250px;
 form{
 max-width:500px;
 margin:auto;
+margin-top:30px;
 }
 
 input, textarea{
 width:100%;
 padding:12px;
-margin-top:10px;
+margin-top:12px;
 border:none;
 border-radius:6px;
 }
 
 button{
-margin-top:15px;
-padding:12px 25px;
 background:#d4ff00;
 border:none;
+padding:14px 28px;
+margin-top:15px;
 border-radius:20px;
 font-weight:bold;
+}
+
+/* CTA */
+
+.cta{
+text-align:center;
+padding:80px 40px;
+background:#111;
 }
 
 /* FOOTER */
 
 footer{
-background:#000;
 padding:40px;
 text-align:center;
+background:black;
 }
 
 </style>
@@ -163,9 +186,10 @@ Valtrix<span class="highlight">Group</span>
 
 </header>
 
+
 <section class="hero">
 
-<div class="hero-text">
+<div>
 
 <h1>
 Where Creators <span class="highlight">Grow Fast</span><br>
@@ -173,7 +197,7 @@ And Brands <span class="highlight">Scale Smart</span>
 </h1>
 
 <p>
-Valtrix Group connects brands with creators to run powerful
+Valtrix Group connects brands with creators to run high-impact
 influencer marketing campaigns and brand collaborations.
 </p>
 
@@ -182,74 +206,92 @@ influencer marketing campaigns and brand collaborations.
 
 </div>
 
-<div class="images">
+<img src="https://picsum.photos/400/350">
 
-<img src="https://picsum.photos/200?1">
-<img src="https://picsum.photos/200?2">
-<img src="https://picsum.photos/200?3">
-<img src="https://picsum.photos/200?4">
+</section>
 
+
+<section class="stats">
+
+<div>
+<h2>150+</h2>
+<p>Creators</p>
+</div>
+
+<div>
+<h2>50+</h2>
+<p>Brand Campaigns</p>
+</div>
+
+<div>
+<h2>5M+</h2>
+<p>Audience Reach</p>
 </div>
 
 </section>
+
 
 <section class="section">
 
 <h2>Our Services</h2>
 
-<div class="services">
+<div class="cards">
 
 <div class="card">
 <h3>Influencer Marketing</h3>
-<p>Run powerful campaigns with creators who match your audience.</p>
+<p>Run campaigns with creators that match your audience.</p>
 </div>
 
 <div class="card">
 <h3>Brand Collaborations</h3>
-<p>Partner with creators to promote products and services.</p>
+<p>Connect your brand with creators for authentic promotion.</p>
 </div>
 
 <div class="card">
 <h3>Campaign Strategy</h3>
-<p>Plan and execute performance-focused marketing campaigns.</p>
+<p>We plan and execute performance-driven creator campaigns.</p>
 </div>
 
 </div>
 
 </section>
+
 
 <section class="section">
 
 <h2>Creator Network</h2>
 
-<p>We work with a growing network of creators across multiple niches.</p>
+<p>We work with creators across lifestyle, tech, food, fitness and more.</p>
 
-<div class="images">
+<div class="creators">
 
+<img src="https://picsum.photos/200?1">
+<img src="https://picsum.photos/200?2">
+<img src="https://picsum.photos/200?3">
+<img src="https://picsum.photos/200?4">
 <img src="https://picsum.photos/200?5">
 <img src="https://picsum.photos/200?6">
-<img src="https://picsum.photos/200?7">
-<img src="https://picsum.photos/200?8">
 
 </div>
 
 </section>
 
+
 <section class="section" id="brandform">
 
 <h2>Start a Campaign</h2>
 
-<p>Tell us about your campaign and our team will reach out.</p>
+<p>Tell us about your campaign and our team will contact you.</p>
 
 <form>
 
-<input type="text" placeholder="Your Name">
+<input placeholder="Your Name">
 
 <input type="email" placeholder="Work Email">
 
-<input type="text" placeholder="Brand / Company">
+<input placeholder="Brand / Company">
 
-<input type="text" placeholder="Campaign Budget">
+<input placeholder="Campaign Budget">
 
 <textarea placeholder="Tell us about your campaign"></textarea>
 
@@ -258,6 +300,18 @@ influencer marketing campaigns and brand collaborations.
 </form>
 
 </section>
+
+
+<section class="cta">
+
+<h2>Ready to Grow Your Brand With Creators?</h2>
+
+<a class="btn" href="mailto:nk.brandpartnerships@gmail.com">
+Start a Campaign
+</a>
+
+</section>
+
 
 <footer>
 
