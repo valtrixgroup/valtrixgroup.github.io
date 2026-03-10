@@ -16,8 +16,6 @@ background:#0c0c0c;
 color:white;
 }
 
-/* NAVBAR */
-
 header{
 display:flex;
 justify-content:space-between;
@@ -38,10 +36,7 @@ nav a{
 margin-left:25px;
 text-decoration:none;
 color:white;
-font-size:14px;
 }
-
-/* HERO */
 
 .hero{
 display:flex;
@@ -52,13 +47,8 @@ flex-wrap:wrap;
 }
 
 .hero h1{
-font-size:60px;
-line-height:1.1;
-}
-
-.hero p{
-opacity:0.8;
-margin-top:20px;
+font-size:55px;
+line-height:1.2;
 }
 
 .btn{
@@ -73,62 +63,30 @@ margin-top:20px;
 margin-right:10px;
 }
 
-/* STATS */
-
-.stats{
-display:flex;
-justify-content:center;
-gap:80px;
-padding:60px;
-background:#111;
-text-align:center;
-}
-
-.stats h2{
-font-size:36px;
-margin:0;
-}
-
-/* SECTION */
-
 .section{
-padding:90px 60px;
+padding:80px 60px;
 text-align:center;
 }
-
-/* SERVICES */
 
 .cards{
 display:flex;
-justify-content:center;
-gap:30px;
 flex-wrap:wrap;
+justify-content:center;
+gap:25px;
 margin-top:40px;
 }
 
 .card{
 background:#151515;
-padding:30px;
+padding:25px;
 border-radius:10px;
 width:260px;
 }
 
-/* CREATOR GRID */
-
-.creators{
-display:grid;
-grid-template-columns:repeat(auto-fit,200px);
-gap:20px;
-justify-content:center;
-margin-top:40px;
+.card a{
+color:#d4ff00;
+text-decoration:none;
 }
-
-.creators img{
-width:200px;
-border-radius:14px;
-}
-
-/* FORM */
 
 form{
 max-width:500px;
@@ -136,7 +94,7 @@ margin:auto;
 margin-top:30px;
 }
 
-input, textarea{
+input,textarea{
 width:100%;
 padding:12px;
 margin-top:12px;
@@ -153,19 +111,9 @@ border-radius:20px;
 font-weight:bold;
 }
 
-/* CTA */
-
-.cta{
-text-align:center;
-padding:80px 40px;
-background:#111;
-}
-
-/* FOOTER */
-
 footer{
-padding:40px;
 text-align:center;
+padding:40px;
 background:black;
 }
 
@@ -175,7 +123,6 @@ background:black;
 
 <body>
 
-
 <header>
 
 <div class="logo">
@@ -183,13 +130,10 @@ Valtrix<span class="highlight">Group</span>
 </div>
 
 <nav>
-
 <a href="#">Home</a>
-<a href="#services">Services</a>
 <a href="#creators">Creators</a>
 <a href="#brandform">Brands</a>
 <a href="#creatorform">Join</a>
-
 </nav>
 
 </header>
@@ -206,8 +150,7 @@ And Brands <span class="highlight">Scale Smart</span>
 </h1>
 
 <p>
-Valtrix Group connects brands with creators to run powerful
-influencer marketing campaigns and brand collaborations.
+Valtrix Group connects brands with creators to run powerful influencer marketing campaigns.
 </p>
 
 <a class="btn" href="#brandform">For Brands</a>
@@ -215,55 +158,7 @@ influencer marketing campaigns and brand collaborations.
 
 </div>
 
-<img src="https://picsum.photos/400/350">
-
-</section>
-
-
-
-<section class="stats">
-
-<div>
-<h2>8+</h2>
-<p>Creators</p>
-</div>
-
-<div>
-<h2>50+</h2>
-<p>Campaign Ideas</p>
-</div>
-
-<div>
-<h2>1M+</h2>
-<p>Audience Reach</p>
-</div>
-
-</section>
-
-
-
-<section class="section" id="services">
-
-<h2>Our Services</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Influencer Marketing</h3>
-<p>Run campaigns with creators that match your audience.</p>
-</div>
-
-<div class="card">
-<h3>Brand Collaborations</h3>
-<p>Promote your products through trusted creators.</p>
-</div>
-
-<div class="card">
-<h3>Campaign Strategy</h3>
-<p>We plan and execute performance-focused creator campaigns.</p>
-</div>
-
-</div>
+<img src="https://picsum.photos/400/300">
 
 </section>
 
@@ -271,18 +166,52 @@ influencer marketing campaigns and brand collaborations.
 
 <section class="section" id="creators">
 
-<h2>Creator Network</h2>
+<h2>Valtrix Creator Network</h2>
 
-<p>Valtrix works with creators across multiple niches.</p>
+<p>Creators across tech, food, lifestyle and fitness niches.</p>
 
-<div class="creators">
+<div class="cards">
 
-<img src="https://picsum.photos/200?1">
-<img src="https://picsum.photos/200?2">
-<img src="https://picsum.photos/200?3">
-<img src="https://picsum.photos/200?4">
-<img src="https://picsum.photos/200?5">
-<img src="https://picsum.photos/200?6">
+<div class="card">
+<h3>Vidaals</h3>
+<p>Tech & Gaming Creator</p>
+<p>7.9K YouTube</p>
+<a href="https://www.youtube.com/@vidaals_official">YouTube</a>
+</div>
+
+<div class="card">
+<h3>Ayan Khan Vlogs</h3>
+<p>Food & Restaurant Reviews</p>
+<p>4K Instagram • 5K YouTube</p>
+<a href="https://youtube.com/@ayan_khan_vlogs_">YouTube</a>
+</div>
+
+<div class="card">
+<h3>Irfana Izzath</h3>
+<p>Lifestyle Creator</p>
+<p>30K Instagram</p>
+<a href="https://www.instagram.com/irfanaizzathcholayil">Instagram</a>
+</div>
+
+<div class="card">
+<h3>Be Your Beast</h3>
+<p>Fitness Creator</p>
+<p>39K YouTube</p>
+<a href="https://www.youtube.com/@beyourbeast">YouTube</a>
+</div>
+
+<div class="card">
+<h3>Fitness Boy Sonu</h3>
+<p>Fitness Creator</p>
+<p>46K Instagram</p>
+<a href="https://www.instagram.com/_fitnessboy_sonu">Instagram</a>
+</div>
+
+<div class="card">
+<h3>Shailendra Khare</h3>
+<p>Multi Channel Creator Network</p>
+<p>60K+ Instagram</p>
+</div>
 
 </div>
 
@@ -292,9 +221,9 @@ influencer marketing campaigns and brand collaborations.
 
 <section class="section" id="brandform">
 
-<h2>Start a Campaign</h2>
+<h2>Start a Brand Campaign</h2>
 
-<p>Tell us about your campaign and our team will contact you.</p>
+<p>Tell us about your campaign.</p>
 
 <form>
 
@@ -306,7 +235,7 @@ influencer marketing campaigns and brand collaborations.
 
 <input placeholder="Campaign Budget">
 
-<textarea placeholder="Tell us about your campaign"></textarea>
+<textarea placeholder="Campaign Details"></textarea>
 
 <button>Submit Campaign</button>
 
@@ -318,9 +247,9 @@ influencer marketing campaigns and brand collaborations.
 
 <section class="section" id="creatorform">
 
-<h2>Join as Creator</h2>
+<h2>Join Valtrix Creator Network</h2>
 
-<p>Creators can collaborate with brands through Valtrix campaigns.</p>
+<p>Apply to collaborate with brands.</p>
 
 <form>
 
@@ -344,18 +273,6 @@ influencer marketing campaigns and brand collaborations.
 
 
 
-<section class="cta">
-
-<h2>Ready to Grow Your Brand With Creators?</h2>
-
-<a class="btn" href="mailto:nk.brandpartnerships@gmail.com">
-Start a Campaign
-</a>
-
-</section>
-
-
-
 <footer>
 
 <p>Email: nk.brandpartnerships@gmail.com</p>
@@ -367,4 +284,5 @@ Start a Campaign
 </footer>
 
 </body>
+
 </html>
