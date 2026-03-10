@@ -2,54 +2,191 @@
 <html>
 <head>
 <title>Valtrix Group</title>
+
 <style>
+
 body{
-font-family: Arial;
-text-align:center;
-padding:40px;
-background:#0f172a;
+margin:0;
+font-family:Arial;
+background:#0b0b0b;
 color:white;
 }
 
-h1{
-font-size:48px;
+header{
+display:flex;
+justify-content:space-between;
+padding:20px 60px;
+align-items:center;
 }
 
-.section{
-margin-top:40px;
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+.highlight{
+color:#d4ff00;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:white;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 60px;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero h1{
+font-size:60px;
+line-height:1.2;
+}
+
+.hero p{
+opacity:0.7;
+margin-top:20px;
 }
 
 .btn{
-background:#22c55e;
-padding:12px 24px;
-color:white;
+background:#d4ff00;
+color:black;
+padding:14px 30px;
+border-radius:30px;
 text-decoration:none;
-border-radius:8px;
+font-weight:bold;
+margin-right:15px;
 }
+
+.images{
+display:grid;
+grid-template-columns:repeat(2,200px);
+gap:20px;
+}
+
+.images img{
+width:200px;
+border-radius:15px;
+}
+
+.section{
+padding:80px 60px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border-radius:10px;
+width:250px;
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:#000;
+margin-top:40px;
+}
+
 </style>
+
 </head>
 
 <body>
 
-<h1>Valtrix Group</h1>
-<p>Brand Partnerships & Creator Collaborations</p>
+<header>
 
-<div class="section">
-<h2>What We Do</h2>
-<p>We connect restaurants, SaaS companies, and fitness brands with creators to drive awareness and sales.</p>
+<div class="logo">
+Valtrix<span class="highlight">Group</span>
 </div>
 
-<div class="section">
-<h2>Services</h2>
-<p>• Restaurant Promotions (Lucknow)</p>
-<p>• SaaS Brand Collaborations</p>
-<p>• Fitness Brand Partnerships</p>
+<nav>
+<a href="#">For Brands</a>
+<a href="#">For Creators</a>
+<a href="#">Works</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>
+Where Creators <span class="highlight">Grow Fast</span> And
+Brands <span class="highlight">Scale Smart</span>
+</h1>
+
+<p>
+Valtrix connects restaurants, SaaS companies and fitness brands
+with creators to drive real growth.
+</p>
+
+<br>
+
+<a class="btn" href="mailto:nk.brandpartnerships@gmail.com">For Brands</a>
+<a class="btn" href="#">For Creators</a>
+
 </div>
 
-<div class="section">
-<h2>Contact</h2>
-<p>Email: nk.brandpartnerships@gmail.com</p>
+<div class="images">
+
+<img src="https://picsum.photos/200?1">
+<img src="https://picsum.photos/200?2">
+<img src="https://picsum.photos/200?3">
+<img src="https://picsum.photos/200?4">
+
 </div>
+
+</section>
+
+<section class="section">
+
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Restaurant Promotions</h3>
+<p>Influencer collaborations for restaurants in Lucknow.</p>
+</div>
+
+<div class="card">
+<h3>SaaS Brand Deals</h3>
+<p>Creator integrations and tech promotions.</p>
+</div>
+
+<div class="card">
+<h3>Fitness Partnerships</h3>
+<p>Promotions for supplements and fitness brands.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>Contact: nk.brandpartnerships@gmail.com</p>
+
+<p>© 2026 Valtrix Group</p>
+
+</footer>
 
 </body>
 </html>
