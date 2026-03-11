@@ -42,13 +42,16 @@ color:white;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:90px 60px;
+padding:80px 60px;
 flex-wrap:wrap;
 }
 
 .hero h1{
-font-size:55px;
-line-height:1.2;
+font-size:50px;
+}
+
+.hero p{
+opacity:0.8;
 }
 
 .btn{
@@ -123,6 +126,7 @@ background:black;
 
 <body>
 
+
 <header>
 
 <div class="logo">
@@ -130,10 +134,12 @@ Valtrix<span class="highlight">Group</span>
 </div>
 
 <nav>
+
 <a href="#">Home</a>
 <a href="#creators">Creators</a>
 <a href="#brandform">Brands</a>
 <a href="#creatorform">Join</a>
+
 </nav>
 
 </header>
@@ -150,7 +156,8 @@ And Brands <span class="highlight">Scale Smart</span>
 </h1>
 
 <p>
-Valtrix Group connects brands with creators to run powerful influencer marketing campaigns.
+Valtrix Group connects brands from India and across the world
+with creators to run powerful influencer marketing campaigns.
 </p>
 
 <a class="btn" href="#brandform">For Brands</a>
@@ -181,7 +188,7 @@ Valtrix Group connects brands with creators to run powerful influencer marketing
 
 <div class="card">
 <h3>Ayan Khan Vlogs</h3>
-<p>Food & Restaurant Reviews</p>
+<p>Food Creator</p>
 <p>4K Instagram • 5K YouTube</p>
 <a href="https://youtube.com/@ayan_khan_vlogs_">YouTube</a>
 </div>
@@ -210,7 +217,7 @@ Valtrix Group connects brands with creators to run powerful influencer marketing
 <div class="card">
 <h3>Shailendra Khare</h3>
 <p>Multi Channel Creator Network</p>
-<p>60K+ Instagram</p>
+<p>60K+ Audience</p>
 </div>
 
 </div>
@@ -225,19 +232,19 @@ Valtrix Group connects brands with creators to run powerful influencer marketing
 
 <p>Tell us about your campaign.</p>
 
-<form>
+<form action="https://formspree.io/f/maqperdq" method="POST">
 
-<input placeholder="Your Name">
+<input type="text" name="name" placeholder="Your Name" required>
 
-<input type="email" placeholder="Work Email">
+<input type="email" name="email" placeholder="Work Email" required>
 
-<input placeholder="Brand / Company">
+<input type="text" name="brand" placeholder="Brand / Company">
 
-<input placeholder="Campaign Budget">
+<input type="text" name="budget" placeholder="Campaign Budget">
 
-<textarea placeholder="Campaign Details"></textarea>
+<textarea name="message" placeholder="Campaign Details"></textarea>
 
-<button>Submit Campaign</button>
+<button type="submit">Submit Campaign</button>
 
 </form>
 
@@ -251,21 +258,21 @@ Valtrix Group connects brands with creators to run powerful influencer marketing
 
 <p>Apply to collaborate with brands.</p>
 
-<form>
+<form action="https://formspree.io/f/maqperdq" method="POST">
 
-<input placeholder="Your Name">
+<input type="text" name="creator_name" placeholder="Your Name" required>
 
-<input type="email" placeholder="Email">
+<input type="email" name="creator_email" placeholder="Email" required>
 
-<input placeholder="Instagram / YouTube Link">
+<input type="text" name="social_link" placeholder="Instagram / YouTube Link">
 
-<input placeholder="Follower Count">
+<input type="text" name="followers" placeholder="Follower Count">
 
-<input placeholder="Content Niche">
+<input type="text" name="niche" placeholder="Content Niche">
 
-<textarea placeholder="Tell us about your content"></textarea>
+<textarea name="creator_message" placeholder="Tell us about your content"></textarea>
 
-<button>Apply Now</button>
+<button type="submit">Apply Now</button>
 
 </form>
 
@@ -283,6 +290,6 @@ Valtrix Group connects brands with creators to run powerful influencer marketing
 
 </footer>
 
-</body>
 
+</body>
 </html>
