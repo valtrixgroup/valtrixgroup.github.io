@@ -1,30 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Valtrix Group</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
 body{
 margin:0;
 font-family:Arial;
-background:#0c0c0c;
+background:#0e0e0e;
 color:white;
 }
+
+/* NAVBAR */
 
 header{
 display:flex;
 justify-content:space-between;
-align-items:center;
 padding:20px 60px;
+align-items:center;
 }
 
 .logo{
-font-size:26px;
+font-size:24px;
 font-weight:bold;
 }
 
@@ -38,6 +40,8 @@ text-decoration:none;
 color:white;
 }
 
+/* HERO */
+
 .hero{
 display:flex;
 justify-content:space-between;
@@ -46,12 +50,18 @@ padding:80px 60px;
 flex-wrap:wrap;
 }
 
+.hero-text{
+max-width:500px;
+}
+
 .hero h1{
-font-size:50px;
+font-size:58px;
+line-height:1.1;
 }
 
 .hero p{
 opacity:0.8;
+margin-top:20px;
 }
 
 .btn{
@@ -61,62 +71,104 @@ padding:14px 28px;
 border-radius:30px;
 text-decoration:none;
 font-weight:bold;
-display:inline-block;
-margin-top:20px;
 margin-right:10px;
+margin-top:20px;
+display:inline-block;
 }
+
+/* STATS */
+
+.stats{
+display:flex;
+justify-content:center;
+gap:80px;
+background:#111;
+padding:60px;
+text-align:center;
+}
+
+.stats h2{
+font-size:38px;
+margin:0;
+}
+
+/* SECTION */
 
 .section{
 padding:80px 60px;
 text-align:center;
 }
 
+/* CREATOR GRID */
+
+.creators{
+display:grid;
+grid-template-columns:repeat(auto-fit,200px);
+gap:20px;
+justify-content:center;
+margin-top:40px;
+}
+
+.creators img{
+width:200px;
+border-radius:12px;
+}
+
+/* SERVICES */
+
 .cards{
 display:flex;
-flex-wrap:wrap;
 justify-content:center;
-gap:25px;
+flex-wrap:wrap;
+gap:30px;
 margin-top:40px;
 }
 
 .card{
 background:#151515;
-padding:25px;
+padding:30px;
 border-radius:10px;
-width:260px;
+width:250px;
 }
 
-.card a{
-color:#d4ff00;
-text-decoration:none;
-}
+/* FORM */
 
 form{
 max-width:500px;
 margin:auto;
-margin-top:30px;
+margin-top:20px;
 }
 
-input,textarea{
+input, textarea{
 width:100%;
 padding:12px;
-margin-top:12px;
+margin-top:10px;
 border:none;
 border-radius:6px;
 }
 
 button{
-background:#d4ff00;
-border:none;
-padding:14px 28px;
 margin-top:15px;
+background:#d4ff00;
+padding:14px 28px;
+border:none;
 border-radius:20px;
 font-weight:bold;
 }
 
-footer{
+/* CTA */
+
+.cta{
+background:#111;
+padding:80px;
 text-align:center;
+}
+
+/* FOOTER */
+
+footer{
 padding:40px;
+text-align:center;
 background:black;
 }
 
@@ -134,90 +186,98 @@ Valtrix<span class="highlight">Group</span>
 </div>
 
 <nav>
-
 <a href="#">Home</a>
 <a href="#creators">Creators</a>
-<a href="#brandform">Brands</a>
-<a href="#creatorform">Join</a>
-
+<a href="#brands">Brands</a>
+<a href="#join">Join</a>
 </nav>
 
 </header>
 
 
-
 <section class="hero">
 
-<div>
+<div class="hero-text">
 
 <h1>
-Where Creators <span class="highlight">Grow Fast</span><br>
+Where Creators <span class="highlight">Grow Fast</span>
 And Brands <span class="highlight">Scale Smart</span>
 </h1>
 
 <p>
-Valtrix Group connects brands from India and across the world
-with creators to run powerful influencer marketing campaigns.
+Valtrix connects brands with creators worldwide to run
+powerful influencer marketing campaigns.
 </p>
 
-<a class="btn" href="#brandform">For Brands</a>
-<a class="btn" href="#creatorform">For Creators</a>
+<a class="btn" href="#brands">For Brands</a>
+<a class="btn" href="#join">For Creators</a>
 
 </div>
 
-<img src="https://picsum.photos/400/300">
+<img src="https://picsum.photos/420/320">
 
 </section>
 
+
+<section class="stats">
+
+<div>
+<h2>10+</h2>
+<p>Creators</p>
+</div>
+
+<div>
+<h2>300K+</h2>
+<p>Total Followers</p>
+</div>
+
+<div>
+<h2>1M+</h2>
+<p>Monthly Reach</p>
+</div>
+
+</section>
 
 
 <section class="section" id="creators">
 
-<h2>Valtrix Creator Network</h2>
+<h2>Creator Network</h2>
 
-<p>Creators across tech, food, lifestyle and fitness niches.</p>
+<p>Creators across tech, lifestyle, fitness and food niches.</p>
+
+<div class="creators">
+
+<img src="https://picsum.photos/200?1">
+<img src="https://picsum.photos/200?2">
+<img src="https://picsum.photos/200?3">
+<img src="https://picsum.photos/200?4">
+<img src="https://picsum.photos/200?5">
+<img src="https://picsum.photos/200?6">
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>Our Services</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>Vidaals</h3>
-<p>Tech & Gaming Creator</p>
-<p>7.9K YouTube</p>
-<a href="https://www.youtube.com/@vidaals_official">YouTube</a>
+<h3>Influencer Marketing</h3>
+<p>Run campaigns with creators who match your audience.</p>
 </div>
 
 <div class="card">
-<h3>Ayan Khan Vlogs</h3>
-<p>Food Creator</p>
-<p>4K Instagram • 5K YouTube</p>
-<a href="https://youtube.com/@ayan_khan_vlogs_">YouTube</a>
+<h3>Brand Collaborations</h3>
+<p>Promote products through trusted creators.</p>
 </div>
 
 <div class="card">
-<h3>Irfana Izzath</h3>
-<p>Lifestyle Creator</p>
-<p>30K Instagram</p>
-<a href="https://www.instagram.com/irfanaizzathcholayil">Instagram</a>
-</div>
-
-<div class="card">
-<h3>Be Your Beast</h3>
-<p>Fitness Creator</p>
-<p>39K YouTube</p>
-<a href="https://www.youtube.com/@beyourbeast">YouTube</a>
-</div>
-
-<div class="card">
-<h3>Fitness Boy Sonu</h3>
-<p>Fitness Creator</p>
-<p>46K Instagram</p>
-<a href="https://www.instagram.com/_fitnessboy_sonu">Instagram</a>
-</div>
-
-<div class="card">
-<h3>Shailendra Khare</h3>
-<p>Multi Channel Creator Network</p>
-<p>60K+ Audience</p>
+<h3>Campaign Strategy</h3>
+<p>Plan and execute high-performing campaigns.</p>
 </div>
 
 </div>
@@ -225,20 +285,17 @@ with creators to run powerful influencer marketing campaigns.
 </section>
 
 
-
-<section class="section" id="brandform">
+<section class="section" id="brands">
 
 <h2>Start a Brand Campaign</h2>
 
-<p>Tell us about your campaign.</p>
-
 <form action="https://formspree.io/f/maqperdq" method="POST">
 
-<input type="text" name="name" placeholder="Your Name" required>
+<input type="text" name="name" placeholder="Your Name">
 
-<input type="email" name="email" placeholder="Work Email" required>
+<input type="email" name="email" placeholder="Work Email">
 
-<input type="text" name="brand" placeholder="Brand / Company">
+<input type="text" name="brand" placeholder="Brand Name">
 
 <input type="text" name="budget" placeholder="Campaign Budget">
 
@@ -251,45 +308,50 @@ with creators to run powerful influencer marketing campaigns.
 </section>
 
 
+<section class="section" id="join">
 
-<section class="section" id="creatorform">
-
-<h2>Join Valtrix Creator Network</h2>
-
-<p>Apply to collaborate with brands.</p>
+<h2>Join as Creator</h2>
 
 <form action="https://formspree.io/f/maqperdq" method="POST">
 
-<input type="text" name="creator_name" placeholder="Your Name" required>
+<input type="text" name="creator_name" placeholder="Your Name">
 
-<input type="email" name="creator_email" placeholder="Email" required>
+<input type="email" name="creator_email" placeholder="Email">
 
-<input type="text" name="social_link" placeholder="Instagram / YouTube Link">
+<input type="text" name="social" placeholder="Instagram / YouTube">
 
 <input type="text" name="followers" placeholder="Follower Count">
 
 <input type="text" name="niche" placeholder="Content Niche">
 
-<textarea name="creator_message" placeholder="Tell us about your content"></textarea>
+<textarea name="message" placeholder="Tell us about your content"></textarea>
 
-<button type="submit">Apply Now</button>
+<button type="submit">Apply</button>
 
 </form>
 
 </section>
 
 
+<section class="cta">
+
+<h2>Ready to grow your brand with creators?</h2>
+
+<a class="btn" href="#brands">Start Campaign</a>
+
+</section>
+
 
 <footer>
 
 <p>Email: nk.brandpartnerships@gmail.com</p>
 
-<p>Mobile: +91 7565872777</p>
+<p>Phone: +91 7565872777</p>
 
 <p>© 2026 Valtrix Group</p>
 
 </footer>
 
-
 </body>
+
 </html>
