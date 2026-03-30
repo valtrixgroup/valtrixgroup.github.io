@@ -1,441 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Valtrix Group</title>
 
 <style>
+*{box-sizing:border-box;}
+body{margin:0;font-family:Arial;background:#0b0b0f;color:white;}
 
-*{
-box-sizing:border-box;
-}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 60px;}
+.logo{font-size:24px;font-weight:bold;}
+.highlight{color:#8aff00;}
+nav a{margin-left:25px;text-decoration:none;color:white;opacity:0.8;}
 
-body{
-margin:0;
-font-family:Arial;
-background:#0b0b0f;
-color:white;
-}
+.hero{display:flex;justify-content:space-between;align-items:center;padding:100px 60px;flex-wrap:wrap;background:linear-gradient(135deg,#0b0b0f,#181825);}
+.hero h1{font-size:50px;max-width:600px;}
+.hero p{max-width:500px;opacity:0.8;margin-top:20px;}
 
-/* NAV */
+.btn{background:#8aff00;color:black;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold;margin-right:10px;display:inline-block;margin-top:25px;}
 
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-}
+.section{padding:80px 60px;text-align:center;}
+.section p{max-width:700px;margin:auto;opacity:0.8;}
 
-.logo{
-font-size:24px;
-font-weight:bold;
-}
+.cards{display:flex;justify-content:center;flex-wrap:wrap;gap:30px;margin-top:40px;}
+.card{background:#14141c;padding:30px;border-radius:12px;width:250px;}
 
-.highlight{
-color:#8aff00;
-}
+form{max-width:500px;margin:auto;margin-top:30px;}
+input,textarea{width:100%;padding:12px;margin-top:12px;border:none;border-radius:6px;}
+button{background:#8aff00;border:none;padding:14px 28px;margin-top:15px;border-radius:20px;font-weight:bold;cursor:pointer;}
 
-nav a{
-margin-left:25px;
-text-decoration:none;
-color:white;
-opacity:0.8;
-}
-
-/* HERO */
-
-.hero{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:100px 60px;
-flex-wrap:wrap;
-background:linear-gradient(135deg,#0b0b0f,#181825);
-}
-
-.hero h1{
-font-size:55px;
-max-width:600px;
-}
-
-.hero p{
-max-width:500px;
-opacity:0.8;
-margin-top:20px;
-}
-
-.btn{
-background:#8aff00;
-color:black;
-padding:14px 28px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-margin-right:10px;
-display:inline-block;
-margin-top:25px;
-}
-
-/* STATS */
-
-.stats{
-display:flex;
-justify-content:center;
-gap:80px;
-background:#121218;
-padding:70px;
-text-align:center;
-}
-
-.stat-box h2{
-font-size:42px;
-color:#8aff00;
-margin:0;
-}
-
-.stat-box p{
-opacity:0.7;
-}
-
-/* SECTIONS */
-
-.section{
-padding:90px 60px;
-text-align:center;
-}
-
-.section p{
-max-width:700px;
-margin:auto;
-opacity:0.8;
-}
-
-/* CREATOR GRID */
-
-.creator-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,250px);
-gap:30px;
-justify-content:center;
-margin-top:40px;
-}
-
-.creator-card{
-background:#151515;
-border-radius:12px;
-overflow:hidden;
-transition:0.4s;
-}
-
-.creator-card img{
-width:100%;
-}
-
-.creator-card h3{
-margin:15px 0 5px;
-}
-
-.creator-card p{
-opacity:0.7;
-padding-bottom:15px;
-}
-
-.creator-card:hover{
-transform:translateY(-10px) scale(1.05);
-box-shadow:0 20px 40px rgba(0,0,0,0.6);
-}
-
-/* SERVICES */
-
-.cards{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:30px;
-margin-top:40px;
-}
-
-.card{
-background:#14141c;
-padding:30px;
-border-radius:12px;
-width:250px;
-}
-
-/* FORM */
-
-form{
-max-width:500px;
-margin:auto;
-margin-top:30px;
-}
-
-input,textarea{
-width:100%;
-padding:12px;
-margin-top:12px;
-border:none;
-border-radius:6px;
-}
-
-button{
-background:#8aff00;
-border:none;
-padding:14px 28px;
-margin-top:15px;
-border-radius:20px;
-font-weight:bold;
-cursor:pointer;
-}
-
-/* CTA */
-
-.cta{
-background:#121218;
-padding:80px;
-text-align:center;
-}
-
-/* FOOTER */
-
-footer{
-background:black;
-padding:40px;
-text-align:center;
-}
-
+.cta{background:#121218;padding:80px;text-align:center;}
+footer{background:black;padding:40px;text-align:center;}
 </style>
-
 </head>
 
 <body>
 
-
 <header>
-
-<div class="logo">
-Valtrix<span class="highlight">Group</span>
-</div>
-
+<div class="logo">Valtrix<span class="highlight">Group</span></div>
 <nav>
-
 <a href="#">Home</a>
 <a href="#services">Services</a>
-<a href="#creators">Creators</a>
-<a href="#brandform">Brands</a>
-<a href="#creatorform">Join</a>
-
+<a href="#brandform">Contact</a>
 </nav>
-
 </header>
 
-
 <section class="hero">
-
 <div>
-
-<h1>
-Creator-Driven Growth for Modern Brands
-</h1>
-
-<p>
-Valtrix Group helps restaurants, SaaS, fitness and lifestyle brands grow through strategic creator partnerships and impactful short-form content campaigns.
-</p>
-
-<a class="btn" href="#brandform">Work With Valtrix</a>
-<a class="btn" href="#creatorform">Join as Creator</a>
-
+<h1>We Help SaaS Brands Get Users Through Creator Campaigns</h1>
+<p>We run multi-creator campaigns that drive targeted exposure and signups using tech-focused creators.</p>
+<a class="btn" href="#brandform">Start Your Campaign</a>
+<a class="btn" href="#services">How It Works</a>
 </div>
-
 <img src="https://picsum.photos/420/300">
-
 </section>
 
-
-<section class="stats">
-
-<div class="stat-box">
-<h2 class="counter" data-target="10">0</h2>
-<p>Creators</p>
+<section class="section">
+<h2>How It Works</h2>
+<div class="cards">
+<div class="card">
+<h3>1. Creator Selection</h3>
+<p>We pick SaaS-relevant creators for your audience.</p>
 </div>
-
-<div class="stat-box">
-<h2 class="counter" data-target="350000">0</h2>
-<p>Total Followers</p>
+<div class="card">
+<h3>2. Campaign Execution</h3>
+<p>We manage content, posting and delivery.</p>
 </div>
-
-<div class="stat-box">
-<h2 class="counter" data-target="1000000">0</h2>
-<p>Monthly Reach</p>
+<div class="card">
+<h3>3. Growth Outcome</h3>
+<p>You get exposure and potential signups.</p>
 </div>
-
+</div>
 </section>
-
 
 <section class="section" id="services">
-
-<h2>Our Core Services</h2>
-
+<h2>SaaS Creator Campaign Services</h2>
 <div class="cards">
-
 <div class="card">
-<h3>Creator Campaigns</h3>
-<p>Launch viral campaigns with niche creators.</p>
+<h3>Short-Form Campaigns</h3>
+<p>Reels & shorts for fast reach.</p>
 </div>
-
 <div class="card">
-<h3>Influencer Collaborations</h3>
-<p>Build authentic partnerships with influencers.</p>
+<h3>YouTube Integrations</h3>
+<p>Deep product exposure.</p>
 </div>
-
 <div class="card">
-<h3>Short-Form Marketing</h3>
-<p>High-engagement video campaigns.</p>
+<h3>Multi-Creator Campaigns</h3>
+<p>Scale reach, reduce risk.</p>
 </div>
-
-<div class="card">
-<h3>Partnership Strategy</h3>
-<p>Long-term creator partnership growth plans.</p>
 </div>
-
-</div>
-
 </section>
 
-
-<section class="section" id="creators">
-
-<h2>Creator Network</h2>
-
-<p>Curated creators across tech, food, fitness and lifestyle niches.</p>
-
-<div class="creator-grid">
-
-<div class="creator-card">
-
-<img src="images/shailendra.jpg">
-
-<h3>Shailendra Khare</h3>
-
-<p>Tech Creator</p>
-
-<p>59K+ YouTube • 21.7K Instagram</p>
-
-</div>
-
-</div>
-
+<section class="section">
+<h2>Proof</h2>
+<p>Executed creator collaboration campaign for a SaaS brand (Agent37).</p>
 </section>
 
+<section class="section">
+<h2>Campaign Packages</h2>
+<p>Starter Campaign: ₹25,000 (3–5 creators)</p>
+<p>Growth Campaign: ₹40,000 (5–10 creators)</p>
+</section>
 
 <section class="section" id="brandform">
-
-<h2>Start a Brand Campaign</h2>
-
+<h2>Start Your Campaign</h2>
 <form action="https://formspree.io/f/maqperdq" method="POST">
-
 <input type="text" name="name" placeholder="Your Name" required>
-
 <input type="email" name="email" placeholder="Work Email" required>
-
-<input type="text" name="brand" placeholder="Brand / Company">
-
-<input type="text" name="budget" placeholder="Campaign Budget">
-
-<textarea name="message" placeholder="Campaign Details"></textarea>
-
-<button type="submit">Submit Campaign</button>
-
+<input type="text" name="brand" placeholder="Company Name">
+<input type="text" name="budget" placeholder="Budget">
+<textarea name="message" placeholder="Tell us about your SaaS"></textarea>
+<button type="submit">Submit</button>
 </form>
-
 </section>
-
-
-<section class="section" id="creatorform">
-
-<h2>Join Valtrix Creator Network</h2>
-
-<form action="https://formspree.io/f/maqperdq" method="POST">
-
-<input type="text" name="creator_name" placeholder="Your Name">
-
-<input type="email" name="creator_email" placeholder="Email">
-
-<input type="text" name="social" placeholder="Instagram / YouTube">
-
-<input type="text" name="followers" placeholder="Follower Count">
-
-<input type="text" name="niche" placeholder="Content Niche">
-
-<textarea name="message" placeholder="Tell us about your content"></textarea>
-
-<button type="submit">Apply</button>
-
-</form>
-
-</section>
-
 
 <section class="cta">
-
-<h2>Ready to Grow Your Brand With Creators?</h2>
-
+<h2>Ready to Grow Your SaaS?</h2>
 <a class="btn" href="#brandform">Start Campaign</a>
-
 </section>
 
-
 <footer>
-
 <h3>Valtrix Group</h3>
-
 <p>Email: nk.brandpartnerships@gmail.com</p>
-
 <p>Phone: +91 7565872777</p>
-
 <p>© 2026 Valtrix Group</p>
-
 </footer>
-
-
-<script>
-
-const counters = document.querySelectorAll('.counter');
-
-counters.forEach(counter => {
-
-counter.innerText = '0';
-
-const updateCounter = () => {
-
-const target = +counter.getAttribute('data-target');
-const count = +counter.innerText;
-
-const increment = target / 200;
-
-if(count < target){
-
-counter.innerText = Math.ceil(count + increment);
-setTimeout(updateCounter,10);
-
-}else{
-
-counter.innerText = target;
-
-}
-
-};
-
-updateCounter();
-
-});
-
-</script>
-
 
 </body>
 </html>
