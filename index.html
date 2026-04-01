@@ -3,129 +3,260 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Valtrix Group</title>
+<title>Valtrix Group | SaaS Growth Partner</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{box-sizing:border-box;}
-body{margin:0;font-family:Arial;background:#0b0b0f;color:white;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+    font-family:'Inter',sans-serif;
+    background:#0a0a0c;
+    color:#ffffff;
+}
 
-header{display:flex;justify-content:space-between;align-items:center;padding:20px 60px;}
-.logo{font-size:24px;font-weight:bold;}
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:0 20px;
+}
+
+/* NAV */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 0;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:600;
+}
+
 .highlight{color:#8aff00;}
-nav a{margin-left:25px;text-decoration:none;color:white;opacity:0.8;}
 
-.hero{display:flex;justify-content:space-between;align-items:center;padding:100px 60px;flex-wrap:wrap;background:linear-gradient(135deg,#0b0b0f,#181825);}
-.hero h1{font-size:50px;max-width:600px;}
-.hero p{max-width:500px;opacity:0.8;margin-top:20px;}
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#aaa;
+    font-size:14px;
+}
 
-.btn{background:#8aff00;color:black;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold;margin-right:10px;display:inline-block;margin-top:25px;}
+/* HERO */
+.hero{
+    padding:100px 0 80px;
+}
 
-.section{padding:80px 60px;text-align:center;}
-.section p{max-width:700px;margin:auto;opacity:0.8;}
+.hero h1{
+    font-size:48px;
+    line-height:1.2;
+    max-width:700px;
+}
 
-.cards{display:flex;justify-content:center;flex-wrap:wrap;gap:30px;margin-top:40px;}
-.card{background:#14141c;padding:30px;border-radius:12px;width:250px;}
+.hero p{
+    margin-top:20px;
+    color:#a0a0a0;
+    max-width:500px;
+    line-height:1.6;
+}
 
-form{max-width:500px;margin:auto;margin-top:30px;}
-input,textarea{width:100%;padding:12px;margin-top:12px;border:none;border-radius:6px;}
-button{background:#8aff00;border:none;padding:14px 28px;margin-top:15px;border-radius:20px;font-weight:bold;cursor:pointer;}
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 28px;
+    border-radius:30px;
+    background:#8aff00;
+    color:#000;
+    font-weight:600;
+    text-decoration:none;
+}
 
-.cta{background:#121218;padding:80px;text-align:center;}
-footer{background:black;padding:40px;text-align:center;}
+/* SECTION */
+.section{
+    padding:80px 0;
+}
+
+.section h2{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.section p{
+    color:#a0a0a0;
+    max-width:600px;
+}
+
+/* CARDS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:#121216;
+    padding:25px;
+    border-radius:12px;
+    border:1px solid #1f1f25;
+}
+
+/* CTA */
+.cta{
+    text-align:center;
+    padding:100px 0;
+}
+
+.cta h2{
+    font-size:32px;
+}
+
+/* FORM */
+form{
+    margin-top:30px;
+    max-width:500px;
+}
+
+input,textarea{
+    width:100%;
+    padding:14px;
+    margin-top:12px;
+    border:none;
+    border-radius:6px;
+    background:#16161c;
+    color:white;
+}
+
+button{
+    margin-top:15px;
+    padding:14px;
+    width:100%;
+    background:#8aff00;
+    border:none;
+    border-radius:30px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    border-top:1px solid #1a1a1f;
+    margin-top:80px;
+    padding:40px 0;
+    text-align:center;
+    color:#777;
+    font-size:14px;
+}
 </style>
 </head>
 
 <body>
+
+<div class="container">
 
 <header>
 <div class="logo">Valtrix<span class="highlight">Group</span></div>
 <nav>
 <a href="#">Home</a>
 <a href="#services">Services</a>
-<a href="#brandform">Contact</a>
+<a href="#contact">Contact</a>
 </nav>
 </header>
 
 <section class="hero">
-<div>
-<h1>We Help SaaS Brands Get Users Through Creator Campaigns</h1>
-<p>We run multi-creator campaigns that drive targeted exposure and signups using tech-focused creators.</p>
-<a class="btn" href="#brandform">Start Your Campaign</a>
-<a class="btn" href="#services">How It Works</a>
-</div>
-<img src="https://picsum.photos/420/300">
+<h1>Acquire Users for Your SaaS Through Creator-Led Distribution</h1>
+
+<p>
+We help SaaS companies drive user acquisition using niche creators,
+UGC, and conversion-focused campaigns — beyond traditional ads.
+</p>
+
+<a href="#contact" class="btn">Book Strategy Call</a>
 </section>
 
 <section class="section">
-<h2>How It Works</h2>
-<div class="cards">
+<h2>Why SaaS Brands Choose Valtrix</h2>
+
+<div class="grid">
 <div class="card">
-<h3>1. Creator Selection</h3>
-<p>We pick SaaS-relevant creators for your audience.</p>
+<h3>Lower CAC</h3>
+<p>Reduce dependence on expensive paid ads using creator ecosystems.</p>
 </div>
+
 <div class="card">
-<h3>2. Campaign Execution</h3>
-<p>We manage content, posting and delivery.</p>
+<h3>High-Intent Audience</h3>
+<p>We match your SaaS with niche creators relevant to your market.</p>
 </div>
+
 <div class="card">
-<h3>3. Growth Outcome</h3>
-<p>You get exposure and potential signups.</p>
+<h3>Conversion-Focused</h3>
+<p>We focus on signups and trials, not vanity metrics.</p>
 </div>
 </div>
 </section>
 
 <section class="section" id="services">
-<h2>SaaS Creator Campaign Services</h2>
-<div class="cards">
+<h2>Our Approach</h2>
+
+<div class="grid">
 <div class="card">
-<h3>Short-Form Campaigns</h3>
-<p>Reels & shorts for fast reach.</p>
+<h3>Creator Sourcing</h3>
+<p>We identify and onboard relevant creators for your niche.</p>
 </div>
+
 <div class="card">
-<h3>YouTube Integrations</h3>
-<p>Deep product exposure.</p>
+<h3>Campaign Execution</h3>
+<p>We manage content, publishing, and coordination end-to-end.</p>
 </div>
+
 <div class="card">
-<h3>Multi-Creator Campaigns</h3>
-<p>Scale reach, reduce risk.</p>
+<h3>Growth Outcome</h3>
+<p>Structured campaigns designed to drive user acquisition.</p>
 </div>
 </div>
 </section>
 
 <section class="section">
 <h2>Proof</h2>
-<p>Executed creator collaboration campaign for a SaaS brand (Agent37).</p>
+
+<div class="grid">
+<div class="card">
+<p>→ 100K+ campaign reach generated</p>
+</div>
+
+<div class="card">
+<p>→ 20+ UGC assets created</p>
+</div>
+
+<div class="card">
+<p>→ Multi-creator SaaS campaigns executed</p>
+</div>
+</div>
 </section>
 
-<section class="section">
-<h2>Campaign Packages</h2>
-<p>Starter Campaign: ₹25,000 (3–5 creators)</p>
-<p>Growth Campaign: ₹40,000 (5–10 creators)</p>
-</section>
+<section class="cta" id="contact">
+<h2>Let’s Scale Your SaaS</h2>
 
-<section class="section" id="brandform">
-<h2>Start Your Campaign</h2>
+<p>Book a short strategy call to explore how creator-led growth can work for you.</p>
+
 <form action="https://formspree.io/f/maqperdq" method="POST">
 <input type="text" name="name" placeholder="Your Name" required>
 <input type="email" name="email" placeholder="Work Email" required>
-<input type="text" name="brand" placeholder="Company Name">
-<input type="text" name="budget" placeholder="Budget">
+<input type="text" name="company" placeholder="Company Name">
+<input type="text" name="website" placeholder="Company Website">
 <textarea name="message" placeholder="Tell us about your SaaS"></textarea>
-<button type="submit">Submit</button>
+<button type="submit">Request Call</button>
 </form>
-</section>
 
-<section class="cta">
-<h2>Ready to Grow Your SaaS?</h2>
-<a class="btn" href="#brandform">Start Campaign</a>
 </section>
 
 <footer>
-<h3>Valtrix Group</h3>
-<p>Email: nk.brandpartnerships@gmail.com</p>
-<p>Phone: +91 7565872777</p>
-<p>© 2026 Valtrix Group</p>
+<p>Valtrix Group © 2026</p>
+<p>Email: nitin@valtrixgroup.in</p>
 </footer>
+
+</div>
 
 </body>
 </html>
