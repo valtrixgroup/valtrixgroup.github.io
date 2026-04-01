@@ -9,145 +9,35 @@
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
-body{
-    font-family:'Inter',sans-serif;
-    background:#0a0a0c;
-    color:#ffffff;
-}
+body{font-family:'Inter',sans-serif;background:#0a0a0c;color:#fff;}
 
-.container{
-    max-width:1100px;
-    margin:auto;
-    padding:0 20px;
-}
+.container{max-width:1100px;margin:auto;padding:0 20px;}
 
-/* NAV */
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px 0;
-}
-
-.logo{
-    font-size:22px;
-    font-weight:600;
-}
-
+header{display:flex;justify-content:space-between;align-items:center;padding:25px 0;}
+.logo{font-size:22px;font-weight:600;}
 .highlight{color:#8aff00;}
+nav a{margin-left:25px;text-decoration:none;color:#aaa;font-size:14px;}
 
-nav a{
-    margin-left:25px;
-    text-decoration:none;
-    color:#aaa;
-    font-size:14px;
-}
+.hero{padding:100px 0 80px;}
+.hero h1{font-size:48px;max-width:750px;line-height:1.2;}
+.hero p{margin-top:20px;color:#a0a0a0;max-width:520px;}
+.urgency{margin-top:10px;color:#8aff00;}
 
-/* HERO */
-.hero{
-    padding:100px 0 80px;
-}
+.btn{display:inline-block;margin-top:30px;padding:14px 28px;border-radius:30px;background:#8aff00;color:#000;font-weight:600;text-decoration:none;}
 
-.hero h1{
-    font-size:48px;
-    line-height:1.2;
-    max-width:700px;
-}
+.section{padding:80px 0;}
+.section h2{font-size:28px;margin-bottom:20px;}
+.section p{color:#a0a0a0;max-width:600px;}
 
-.hero p{
-    margin-top:20px;
-    color:#a0a0a0;
-    max-width:500px;
-    line-height:1.6;
-}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;margin-top:40px;}
 
-.btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:14px 28px;
-    border-radius:30px;
-    background:#8aff00;
-    color:#000;
-    font-weight:600;
-    text-decoration:none;
-}
+.card{background:#121216;padding:25px;border-radius:12px;border:1px solid #1f1f25;}
 
-/* SECTION */
-.section{
-    padding:80px 0;
-}
+form{margin-top:30px;max-width:500px;}
+input,textarea{width:100%;padding:14px;margin-top:12px;border:none;border-radius:6px;background:#16161c;color:white;}
+button{margin-top:15px;padding:14px;width:100%;background:#8aff00;border:none;border-radius:30px;font-weight:600;cursor:pointer;}
 
-.section h2{
-    font-size:28px;
-    margin-bottom:20px;
-}
-
-.section p{
-    color:#a0a0a0;
-    max-width:600px;
-}
-
-/* CARDS */
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-    margin-top:40px;
-}
-
-.card{
-    background:#121216;
-    padding:25px;
-    border-radius:12px;
-    border:1px solid #1f1f25;
-}
-
-/* CTA */
-.cta{
-    text-align:center;
-    padding:100px 0;
-}
-
-.cta h2{
-    font-size:32px;
-}
-
-/* FORM */
-form{
-    margin-top:30px;
-    max-width:500px;
-}
-
-input,textarea{
-    width:100%;
-    padding:14px;
-    margin-top:12px;
-    border:none;
-    border-radius:6px;
-    background:#16161c;
-    color:white;
-}
-
-button{
-    margin-top:15px;
-    padding:14px;
-    width:100%;
-    background:#8aff00;
-    border:none;
-    border-radius:30px;
-    font-weight:600;
-    cursor:pointer;
-}
-
-/* FOOTER */
-footer{
-    border-top:1px solid #1a1a1f;
-    margin-top:80px;
-    padding:40px 0;
-    text-align:center;
-    color:#777;
-    font-size:14px;
-}
+footer{border-top:1px solid #1a1a1f;margin-top:80px;padding:40px 0;text-align:center;color:#777;font-size:14px;}
 </style>
 </head>
 
@@ -160,95 +50,121 @@ footer{
 <nav>
 <a href="#">Home</a>
 <a href="#services">Services</a>
-<a href="#contact">Contact</a>
+<a href="#brand">For Brands</a>
+<a href="#creator">For Creators</a>
 </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-<h1>Acquire Users for Your SaaS Through Creator-Led Distribution</h1>
+<h1>Drive SaaS Signups Using Creator-Led Campaigns — Not Expensive Ads</h1>
 
 <p>
-We help SaaS companies drive user acquisition using niche creators,
-UGC, and conversion-focused campaigns — beyond traditional ads.
+We help SaaS brands acquire users through niche creators,
+UGC, and structured distribution campaigns designed for conversions.
 </p>
 
-<a href="#contact" class="btn">Book Strategy Call</a>
+<p class="urgency">Limited onboarding slots this month</p>
+
+<a href="#brand" class="btn">Book Strategy Call</a>
 </section>
 
+<!-- WHY -->
 <section class="section">
 <h2>Why SaaS Brands Choose Valtrix</h2>
 
 <div class="grid">
 <div class="card">
 <h3>Lower CAC</h3>
-<p>Reduce dependence on expensive paid ads using creator ecosystems.</p>
+<p>Reduce dependency on paid ads using creator ecosystems.</p>
 </div>
 
 <div class="card">
-<h3>High-Intent Audience</h3>
-<p>We match your SaaS with niche creators relevant to your market.</p>
+<h3>High-Intent Reach</h3>
+<p>We match your SaaS with niche creators trusted by your audience.</p>
 </div>
 
 <div class="card">
 <h3>Conversion-Focused</h3>
-<p>We focus on signups and trials, not vanity metrics.</p>
+<p>Campaigns designed for signups and trials — not just views.</p>
 </div>
 </div>
 </section>
 
+<!-- SERVICES -->
 <section class="section" id="services">
 <h2>Our Approach</h2>
 
 <div class="grid">
 <div class="card">
 <h3>Creator Sourcing</h3>
-<p>We identify and onboard relevant creators for your niche.</p>
+<p>We identify and onboard relevant creators.</p>
 </div>
 
 <div class="card">
 <h3>Campaign Execution</h3>
-<p>We manage content, publishing, and coordination end-to-end.</p>
+<p>We manage content, publishing, and delivery.</p>
 </div>
 
 <div class="card">
 <h3>Growth Outcome</h3>
-<p>Structured campaigns designed to drive user acquisition.</p>
+<p>Structured campaigns focused on user acquisition.</p>
 </div>
 </div>
 </section>
 
+<!-- PROOF -->
 <section class="section">
 <h2>Proof</h2>
 
 <div class="grid">
-<div class="card">
-<p>→ 100K+ campaign reach generated</p>
-</div>
-
-<div class="card">
-<p>→ 20+ UGC assets created</p>
-</div>
-
-<div class="card">
-<p>→ Multi-creator SaaS campaigns executed</p>
-</div>
+<div class="card"><p>→ 100K+ reach via SaaS creator campaigns</p></div>
+<div class="card"><p>→ 20+ UGC assets created</p></div>
+<div class="card"><p>→ Multi-creator campaigns executed</p></div>
 </div>
 </section>
 
-<section class="cta" id="contact">
-<h2>Let’s Scale Your SaaS</h2>
-
-<p>Book a short strategy call to explore how creator-led growth can work for you.</p>
+<!-- BRAND FORM -->
+<section class="section" id="brand">
+<h2>Work With Us (For SaaS Brands)</h2>
 
 <form action="https://formspree.io/f/maqperdq" method="POST">
+
 <input type="text" name="name" placeholder="Your Name" required>
 <input type="email" name="email" placeholder="Work Email" required>
 <input type="text" name="company" placeholder="Company Name">
 <input type="text" name="website" placeholder="Company Website">
-<textarea name="message" placeholder="Tell us about your SaaS"></textarea>
-<button type="submit">Request Call</button>
-</form>
+<input type="text" name="budget" placeholder="Monthly Budget">
 
+<textarea name="message" placeholder="Tell us about your SaaS & goals"></textarea>
+
+<input type="hidden" name="_subject" value="New SaaS Lead - Valtrix">
+
+<button type="submit">Request Strategy Call</button>
+
+</form>
+</section>
+
+<!-- CREATOR FORM -->
+<section class="section" id="creator">
+<h2>Join as Creator</h2>
+
+<form action="https://formspree.io/f/xpqypvjk" method="POST">
+
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<input type="text" name="instagram" placeholder="Instagram / YouTube Link" required>
+<input type="text" name="niche" placeholder="Content Niche" required>
+<input type="number" name="followers" placeholder="Followers Count">
+<input type="text" name="pricing" placeholder="Price per Promotion">
+
+<textarea name="message" placeholder="Tell us about your content"></textarea>
+
+<input type="hidden" name="_subject" value="New Creator Application - Valtrix">
+
+<button type="submit">Apply as Creator</button>
+
+</form>
 </section>
 
 <footer>
