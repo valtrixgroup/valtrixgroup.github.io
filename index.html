@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Valtrix Group | SaaS Growth via Creator Campaigns</title>
+<title>Valtrix Group | SaaS Growth</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -29,9 +29,11 @@ border-radius:30px;
 font-weight:600;
 text-decoration:none;
 margin-top:20px;
-transition:0.2s;
+transition:all 0.2s ease;
 }
-.btn:hover{opacity:0.9;}
+.btn:hover{
+transform:scale(1.05);
+}
 
 .section{margin-top:80px;}
 
@@ -46,6 +48,26 @@ background:#111115;
 padding:25px;
 border-radius:14px;
 border:1px solid #1f1f25;
+transition:all 0.3s ease;
+}
+
+/* 🔥 HOVER EFFECT */
+.card:hover{
+transform:translateY(-8px) scale(1.02);
+border-color:#8aff00;
+box-shadow:0 10px 30px rgba(138,255,0,0.15);
+}
+
+/* 🔥 SCROLL ANIMATION */
+.reveal{
+opacity:0;
+transform:translateY(50px);
+transition:all 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
 }
 
 footer{
@@ -56,25 +78,11 @@ text-align:center;
 color:#777;
 font-size:13px;
 }
+
 a{color:#8aff00;text-decoration:none;}
 
-/* Animation */
-.reveal{
-opacity:0;
-transform:translateY(40px);
-transition:all 0.8s ease;
-}
-
-.reveal.active{
-opacity:1;
-transform:translateY(0);
-}
-
-/* Responsive */
 @media(max-width:768px){
-.grid{
-grid-template-columns:1fr;
-}
+.grid{grid-template-columns:1fr;}
 h1{font-size:34px;}
 }
 </style>
@@ -92,7 +100,7 @@ in 30 Days Using Creator Campaigns
 </h1>
 
 <p>
-We help SaaS tools reduce CAC and acquire users through structured content workflows — not random influencer promotions.
+We help SaaS tools reduce CAC and acquire users through structured workflows — not random influencer promotions.
 </p>
 
 <p style="color:#8aff00;">Only working with SaaS tools doing $1K+ MRR</p>
@@ -100,7 +108,7 @@ We help SaaS tools reduce CAC and acquire users through structured content workf
 <a href="/get-started.html" class="btn">Get Free Campaign Plan</a>
 
 <p style="color:#8aff00;font-size:14px;margin-top:10px;">
-Avg CAC from campaigns: ₹30–₹80
+Avg CAC: ₹30–₹80
 </p>
 </div>
 
@@ -110,66 +118,69 @@ Avg CAC from campaigns: ₹30–₹80
 <p>We don’t run influencer campaigns. We build acquisition systems.</p>
 
 <div class="grid">
+
 <div class="card reveal">
 <h3>Micro-Distribution Strategy</h3>
-<p>We leverage niche audiences instead of expensive influencers — improving trust and lowering CAC.</p>
+<p>Leverage niche audiences instead of expensive influencers.</p>
 </div>
 
 <div class="card reveal">
 <h3>Workflow-Based Content</h3>
-<p>Content is built around real product usage — not promotions — driving actual conversions.</p>
+<p>Real usage content that drives conversions.</p>
 </div>
 
 <div class="card reveal">
 <h3>Test → Scale Model</h3>
-<p>We test multiple angles, scale what works, and eliminate what doesn’t.</p>
+<p>We test, scale winners, eliminate weak campaigns.</p>
 </div>
 
 <div class="card reveal">
 <h3>Performance Focus</h3>
-<p>Every campaign is optimized for signups, not vanity metrics.</p>
+<p>Optimized for signups, not vanity metrics.</p>
 </div>
+
 </div>
 </div>
 
-<!-- HOW IT WORKS -->
+<!-- HOW -->
 <div class="section reveal">
 <h2>How It Works</h2>
 
 <div class="grid">
+
 <div class="card reveal">
 <h3>1. Strategy</h3>
-<p>We design a creator-driven acquisition plan aligned with your product.</p>
+<p>We plan your acquisition system.</p>
 </div>
 
 <div class="card reveal">
 <h3>2. Distribution</h3>
-<p>Content is deployed through targeted audiences.</p>
+<p>Content reaches targeted users.</p>
 </div>
 
 <div class="card reveal">
 <h3>3. Execution</h3>
-<p>We manage campaigns end-to-end.</p>
+<p>Campaign handled end-to-end.</p>
 </div>
 
 <div class="card reveal">
 <h3>4. Optimization</h3>
-<p>We continuously improve performance and reduce CAC.</p>
+<p>We improve performance continuously.</p>
 </div>
+
 </div>
 </div>
 
-<!-- CASE STUDY -->
+<!-- CASE -->
 <div class="section reveal">
 <h2>Case Study</h2>
 
 <div class="card reveal">
-<p><strong>AI SaaS Campaign (India)</strong></p>
-<p>21-day campaign</p>
-
+<p><strong>AI SaaS Campaign</strong></p>
+<p>21 days</p>
 <p>• 14,200 clicks</p>
 <p>• 1,050 signups</p>
-<p>• CAC: ₹33 (vs ₹120 paid ads)</p>
+<p>• CAC: ₹33</p>
 </div>
 </div>
 
@@ -178,9 +189,7 @@ Avg CAC from campaigns: ₹30–₹80
 <h2>Pricing</h2>
 
 <div class="card reveal">
-<p>
-Most campaigns range between <span class="highlight">₹30K – ₹1L+</span> depending on scale.
-</p>
+<p>Most campaigns range between <span class="highlight">₹30K – ₹1L+</span></p>
 </div>
 </div>
 
@@ -188,9 +197,7 @@ Most campaigns range between <span class="highlight">₹30K – ₹1L+</span> de
 <div class="section reveal">
 <h2>Start Your Campaign</h2>
 
-<p>
-Get a custom acquisition plan tailored to your SaaS.
-</p>
+<p>Get a custom plan for your SaaS.</p>
 
 <a href="/get-started.html" class="btn">Get Started</a>
 </div>
@@ -207,23 +214,20 @@ Get a custom acquisition plan tailored to your SaaS.
 
 </div>
 
+<!-- 🔥 INTERSECTION OBSERVER (NO RESET ISSUE) -->
 <script>
 const reveals = document.querySelectorAll(".reveal");
 
-function revealOnScroll() {
-  const windowHeight = window.innerHeight;
-
-  reveals.forEach((el) => {
-    const elementTop = el.getBoundingClientRect().top;
-
-    if (elementTop < windowHeight - 80) {
-      el.classList.add("active");
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
+      observer.unobserve(entry.target);
     }
   });
-}
+}, { threshold: 0.15 });
 
-window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll);
+reveals.forEach(el => observer.observe(el));
 </script>
 
 </body>
